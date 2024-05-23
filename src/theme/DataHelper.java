@@ -1,9 +1,14 @@
+package theme;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class DataHelper {
 
     public static final int[] RANDOM_ARRAY_INT = {4, -100, 55, -1, 346, 2315, -5687, 4, 0, 0, 4};
+    public static final int[] RANDOM_POSITIVE_ARRAY_INT = {3, 1, 2, 0, 8, 4, 1, 2, 5, 5};
+    public static final int[] RANDOM_SORTED_ARRAY_INT = {1, 3, 5, 7, 9, 11};
+    public static final String[] ARRAY_WITH_FRUITS = {"apple", "banana", "cherry", "orange", "mango", "strawberry"};
 
     public static final double[] RANDOM_ARRAY_MAX =
             {Math.random(), Math.random(), Math.random(), Math.random(),
