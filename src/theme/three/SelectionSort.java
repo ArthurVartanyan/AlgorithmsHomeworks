@@ -1,7 +1,6 @@
 package theme.three;
 
 import java.util.LinkedList;
-import java.util.Objects;
 
 public class SelectionSort {
     public static void main(String[] args) {
@@ -32,19 +31,6 @@ public class SelectionSort {
         }
 
         @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-            Student student = (Student) o;
-            return point == student.point && Objects.equals(fullName, student.fullName);
-        }
-
-        @Override
-        public int hashCode() {
-            return Objects.hash(point, fullName) * 42414121;
-        }
-
-        @Override
         public String toString() {
             return "Student{" +
                     "point=" + point +
@@ -54,18 +40,6 @@ public class SelectionSort {
 
         public int getPoint() {
             return point;
-        }
-
-        public void setPoint(int point) {
-            this.point = point;
-        }
-
-        public String getFullName() {
-            return fullName;
-        }
-
-        public void setFullName(String fullName) {
-            this.fullName = fullName;
         }
     }
 
